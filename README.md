@@ -9,8 +9,11 @@ Download the finetuned model with the link:
 [https://drive.google.com/file/d/1t5VFEcP_WII7SK1Sq57FboXA4jph8I90/view?usp=share_link](https://drive.google.com/file/d/1t5VFEcP_WII7SK1Sq57FboXA4jph8I90/view?usp=share_link)
 
 ### Step 2
-Run the following command to start the website: `flask run` 
+- To start the Flask website, run: `flask run`.
+- For the Streamlit app, run: `streamlit run streamlit_app.py`.
+
 Alternatively, use the **speech_generator.ipynb** for more detailed information.
+
 
 ## Train
 To train the model by yourself, find the code in the train folder. The **finetune.ipynb** file is used for finetuning, and **speech_reader** is for loading data.
@@ -24,13 +27,14 @@ Once the LegislatorBot is set up and running, users can interact with it to gene
 ## Features
 - **GPT2-Based**: Utilizes the powerful GPT2 model for generating realistic text.
 - **Congressional Speech Records**: Trained specifically on the 114th Senate congressional speech records for authentic legislative style simulation.
-- **Flask Web Interface**: Easy to use web interface for interacting with the bot.
+- **Flask and Streamlit Interfaces**: Easy to use web interfaces for interacting with the bot.
 - **Custom Training Option**: Ability to finetune the model with your own data set using provided notebooks.
 
 ## Requirements
 To run LegislatorBot, you will need:
 - Python 3.x
 - Flask
+- Streamlit
 - PyTorch
 - Transformer
 - Numpy
