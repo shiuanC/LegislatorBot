@@ -27,6 +27,7 @@
             <div class="card card-6">
                 <div class="card-heading">
                     <h2 class="title">LegislatorBot</h2>
+                    <h3 class="subtitle">Learn What a Legislator Says in the 114th Senate</h2>
                 </div>
                 <div class="card-body">
                     <form>
@@ -39,6 +40,7 @@
                         <div class="form-row">
                             <div class="name">Article Maximum Length</div>
                             <div class="value">
+                                <a href="#" class="badge badge-secondary">The minmum length is 50, and the maximum is 300</a>
                                 <div class="input-group">
                                     <input type="number" id="articleLength" name="articleLength" min="50" max="300" value="150">
                                 </div>
@@ -52,9 +54,9 @@
                     </form>
                     <form >
 
-                        <div class="form-row" id='result' style="display:none; height: 200px;">
+                        <div class="form-row" id='result' style="display:none; height: 400px; ">
                             <div class="name">Result</div>
-                            <div class="value" id="result" style="height: 100%;">
+                            <div class="value" id="result" style="height: 100%; width:100%">
                                 <div class="input-group" id="translator-text-response" style="height: 90%;">
                                     <textarea readonly class="textarea--style-16" id="generated-result"></textarea>
                                 </div>

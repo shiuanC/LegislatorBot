@@ -15,6 +15,9 @@ Alternatively, use the **speech_generator.ipynb** for more detailed information.
 ## Train
 To train the model by yourself, find the code in the train folder. The **finetune.ipynb** file is used for finetuning, and **speech_reader** is for loading data.
 
+## Data Source
+The data for training the LegislatorBot was sourced from the Stanford Congressional Records, which provides a comprehensive collection of congressional speech records. Access the data at [Stanford Congressional Records](https://data.stanford.edu/congress_text).
+
 ## Usage
 Once the LegislatorBot is set up and running, users can interact with it to generate speeches in the style of the 114th Senate congressional records. This can be an invaluable tool for understanding legislative language and style.
 
