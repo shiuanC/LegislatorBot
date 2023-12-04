@@ -80,6 +80,7 @@
 }
 
 .form-row .name {
+  margin-right: 10px;
   width: 188px;
   color: #333;
   font-size: 15px;
@@ -466,8 +467,20 @@ input[type="date" i] {
 /* ==========================================================================
    #FORM
    ========================================================================== */
-input,
+input {
+  outline: none;
+  margin: 0;
+  /* border: none; */
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 60%;
+  font-size: 14px;
+  font-family: inherit;
+}
+
 textarea {
+  /* resize: none;  */
   outline: none;
   margin: 0;
   border: none;
@@ -477,10 +490,6 @@ textarea {
   width: 100%;
   font-size: 14px;
   font-family: inherit;
-}
-
-textarea {
-  resize: none;
 }
 
 .input-group {

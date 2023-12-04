@@ -10,7 +10,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>GPT2 文章生產機
+    <title>LegislatorBot
     </title>
 
     <!-- Font special for pages-->
@@ -26,48 +26,25 @@
         <div class="wrapper wrapper--w900">
             <div class="card card-6">
                 <div class="card-heading">
-                    <h2 class="title">GPT2 文章生產機</h2>
+                    <h2 class="title">LegislatorBot</h2>
                 </div>
                 <div class="card-body">
                     <form>
                         <div class="form-row">
-                            <div class="name">Prefix</div>
-                            <div class="value">
-                                <input id="text-prefix" class="input--style-6">
-                            </div>
+                            <div class="name">Choose a Senator</div>
+                            <select id="speaker" class="custom-select">
+                                    
+                            </select>
                         </div>
                         <div class="form-row">
-                            <div class="name">Article Length</div>
+                            <div class="name">Article Maximum Length</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-6" id="text-length">
+                                    <input type="number" id="articleLength" name="articleLength" min="50" max="300" value="150">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="form-row ">
-                            <div class="col-md-6 form-group">
-                                
-                                <label for="keyword" class="checkbox-inline">
-                                    使用關鍵字
-                                    <input type="checkbox" class="form-check-input" id="keyword-check" name ='keyword'>
-                                </label>
-                                
-                            </div>
-                    
-                        
-                            <div class="col-md-6 form-group">
-
-                                <select id="model">
-                                    　<option value="19k-10">19k news 10epoch</option>
-                                    　<option value="34k-21">34k news 21epoch</option>
-                                    　<option value="34k">34k news final</option>
-                                    　<option value="33k-clear">33k cleared news final</option>
-                                    　<option value="119k">119k news</option>
-                                    　<option value="finetune">finetune</option>
-                                </select>
-                            </div>
-                        </div>
                         
                         <div class="card-footer">
                             <button id="TextGene" class="btn btn--radius-2 btn--blue-2" type="submit">Start</button>
@@ -75,10 +52,10 @@
                     </form>
                     <form >
 
-                        <div class="form-row" id='result'>
+                        <div class="form-row" id='result' style="display:none; height: 200px;">
                             <div class="name">Result</div>
-                            <div class="value" id="result">
-                                <div class="input-group" id="translator-text-response">
+                            <div class="value" id="result" style="height: 100%;">
+                                <div class="input-group" id="translator-text-response" style="height: 90%;">
                                     <textarea readonly class="textarea--style-16" id="generated-result"></textarea>
                                 </div>
                             </div>
